@@ -7,7 +7,7 @@ header {
   grid-template-columns: 1fr 148px 1fr;
   align-items: center;
   padding-top: 90px;
-  padding-bottom: 94px;
+  padding-bottom: 89px;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -52,9 +52,10 @@ header {
   position: relative;
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
-  padding: 165px 50px 28px 50px;
+  padding: 172px 50px 50px 50px;
   z-index: -2;
   background-size: cover;
+  background-position: center;
 }
 .overlay {
   position: absolute;
@@ -74,25 +75,67 @@ header {
   text-transform: uppercase;
   color: #ffffff;
   letter-spacing: 0.3em;
-  margin-bottom: 147px;
+  margin-bottom: 135.5px;
 }
 
 .aligned-text {
   display: block;
 }
-
+.aligned-text_left {
+  padding-bottom: 28px;
+}  
 .aligned-text_center {
   text-align: center;
+  padding-bottom: 20px;   /*нижние паддинги прменены, чтобы отодвинуть блоки друг от друга, боковые, чтобы выровнять по горизонтали*/
+  padding-right: 28px;
 }
 .aligned-text_right {
   text-align: right;
+  margin-right: -30px;
 }
-.letter-spacing-extended {
 
+/*сдвиг букв в словах, созданы отдельные обёрки*/
+
+.letter-spacing-extended-lastletter {
+  display: intine-block;
+  padding-left: 30px;
 }
- 
-.cover__description{
-    display:flex;
-    justify-content: space-between;
-    margin-top: ;
+.letter-spacing-extended-firstletter {
+  display: intine-block;
+  padding-right: 30px;
+}
+/*сдвиг букв в словах*/
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+}
+.cover__description-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 0px;
+  word-spacing: 19px;
+  align-self: center;
+  padding-left: 28px;
+}
+
+button {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  padding: 11.5px 32px 11.5px 31px;
+  align-self: end;
 }

@@ -43,7 +43,6 @@ header {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 21px;
   color: #000000;
   text-underline-position: under;
   line-height: 24.5px;
@@ -257,8 +256,6 @@ button {
   justify-content: center;
   top: 65.25px;
   left: 47.56px;
-}
-.about-deal {
 }
 .about__title {
   font-family: "Raleway";
